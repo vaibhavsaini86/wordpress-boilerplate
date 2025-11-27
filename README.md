@@ -1,4 +1,4 @@
-<p align="center"><img src="wp-content/themes/framesync/public/logo.png" width="150" height="auto" draggable="false" decoding="async"></p>
+<!-- <p align="center"><img src="wp-content/themes/framesync/public/logo.png" width="150" height="auto" draggable="false" decoding="async"></p> -->
 
 # Framesync
 
