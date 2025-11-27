@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+
+section {
+  &:not(:first-child) {
+    padding: rem(40) 0;
+  }
+}

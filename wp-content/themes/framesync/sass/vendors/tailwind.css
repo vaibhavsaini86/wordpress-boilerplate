@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    height: 100%;
+
+    @media (min-width: 1600px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

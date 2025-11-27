@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+
+:has(#wpadminbar) {
+  .header {
+    top: rem(32);
+  }
+}

@@ -1,0 +1,288 @@
+@use '../helpers' as *;
+
+.productpage {
+  .title {
+    font-size: rem(24);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @media (min-width: rem(768)) {
+      font-size: rem(32);
+    }
+  }
+
+  .text {
+    &:not(:first-child) {
+      margin-top: rem(20);
+    }
+  }
+
+  .banner {
+    &__title {
+      margin: 0 auto;
+      max-width: rem(1200);
+      font-size: rem(28);
+      text-align: center;
+
+      @media (min-width: rem(768)) {
+        font-size: rem(36);
+      }
+    }
+  }
+
+  .grade {
+    .content {
+      display: grid;
+      place-content: center;
+      height: rem(400);
+      position: relative;
+      overflow: hidden;
+
+      @media (min-width: rem(768)) {
+        height: rem(500);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/images/product/grade.webp') no-repeat center center / cover;
+        transform: scaleX(-1);
+        z-index: -2;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+    }
+
+    .title {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .text {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  }
+
+  .furnishing {
+    .content {
+      display: grid;
+      place-content: center;
+      height: rem(400);
+      position: relative;
+      overflow: hidden;
+
+      @media (min-width: rem(768)) {
+        height: rem(500);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/images/product/furnishing.webp') no-repeat center center / cover;
+        transform: scaleX(-1);
+        z-index: -2;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+    }
+
+    .title {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .text {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  }
+
+  .moulded {
+    .content {
+      display: grid;
+      place-content: center;
+      height: rem(400);
+      position: relative;
+      overflow: hidden;
+
+      @media (min-width: rem(768)) {
+        height: rem(500);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../public/images/product/moulded.webp') no-repeat center center / cover;
+        transform: scaleX(-1);
+        z-index: -2;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+    }
+
+    .title {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .text {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  }
+
+  .seat {
+    padding-bottom: rem(80);
+  }
+
+  .partner {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    background: rgb(51, 51, 51);
+
+    @media (min-width: rem(768)) {
+      padding-top: rem(100);
+      padding-bottom: rem(100);
+    }
+
+    .title {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .text {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  }
+
+  .industry {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+    &-list {
+      margin-top: rem(64);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: rem(32);
+
+      @media (min-width: rem(768)) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (min-width: rem(1200)) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    &-item {
+      padding: rem(50) rem(20);
+      background: rgb(244, 244, 244);
+    }
+
+    &-item-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(10);
+    }
+
+    &-item-icon {
+      width: rem(60);
+      height: rem(60);
+      margin: 0 auto;
+    }
+
+    &-item-title {
+      font-size: rem(14);
+      font-weight: 500;
+      color: var(--color-font);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+
+    &-item-text {
+      font-size: rem(14);
+      color: var(--color-font);
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  .form {
+    margin-bottom: rem(80);
+
+    &-title {
+      font-size: rem(24);
+      color: var(--color-font);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      .highlight {
+        color: var(--color-theme);
+      }
+
+      @media (min-width: rem(768)) {
+        font-size: rem(32);
+      }
+    }
+
+    &-wrapper {
+      margin-top: rem(32);
+
+      form {
+        input:not([type="submit"]),
+        textarea {
+          margin-top: rem(20);
+        }
+
+        [type="submit"] {
+          margin-top: rem(20);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+// @use '../components/buttons' as *;
+
+form {
+  max-width: rem(600);
+  margin: 0 auto;
+
+  input:not([type="submit"]),
+  textarea {
+  }
+
+  textarea {
+    resize: none;
+    height: rem(150);
+    overflow-y: auto;
+  }
+
+  [type="submit"] {
+    // @extend .btn;
+    // @extend .btn-secondary;
+  }
+}
